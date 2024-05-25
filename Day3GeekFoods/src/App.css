@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+nav{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  
+}
+.logo{
+  display: flex;
+  gap: 5px;
+}
+.items{
+  display: flex;
+  gap: 15px;
+}
+nav button{
+  background-color: dodgerblue;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: transparent;
+
+}
+
+.hero{
+  background-image: url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.hero-inner{
+  width: 600px;
+  
+}
+.hero h1{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.hero p{
+  font-size: 25px ;
+}
+.hero button{
+  color: #fff;
+  background-color: rgb(232, 13, 72);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: transparent;
+  margin: 10px;;
+}
+
