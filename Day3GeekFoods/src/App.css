@@ -1,25 +1,32 @@
 *{
   margin: 0;
   padding: 0;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
 nav{
   background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px rgb(210, 210, 210);
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: .7rem;
   align-items: center;
+  position: sticky;
+  top: 0;
   
 }
 .logo{
+  padding: 1rem;
   display: flex;
   gap: 5px;
+ 
 }
 .items{
+  font-weight: 600;
   display: flex;
   gap: 15px;
 }
 nav button{
+  padding: 1rem;
   background-color: dodgerblue;
   border-radius: 10px;
   padding: 10px 15px;
@@ -40,7 +47,7 @@ nav button{
 }
 .hero h1{
   font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+
   font-weight: bold;
 }
 .hero p{
@@ -54,5 +61,98 @@ nav button{
   font-size: 20px;
   border: transparent;
   margin: 10px;;
+}
+.hero button:hover{
+  cursor: pointer;
+  background-color: rgb(195, 4, 55);
+}
+.hero-content{
+ padding-top: 10rem;
+ padding-left: 2rem
+}
+.section-1-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ededed;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section-1-left{
+  padding: 3rem;
+  width: 50%;
+  background-color: #fff;
+}
+.section-1-left img{
+  width: 100%;
+}
+.section-1-right{
+ 
+  padding: 3rem;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+.section-1-right h1 ,p, button{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section-1-right button{
+  padding: 1rem;
+  background-color: rgb(86, 30, 255);
+  color: #fff;
+  border-radius: 5px;
+  border: transparent;
+  font-size: 16px;
+  height: 50px;
+}
+.section-1-right button:hover{
+
+  cursor: pointer;
+  transition: .2s ease;
+  color:  rgb(86, 30, 255);
+  background-color: #fff;
+  border: 1px solid  rgb(86, 30, 255);
+}
+
+
+
+
+.testimonial-boxes-1 , .testimonial-boxes-2{
+  display: flex;
+  flex-wrap:wrap ;
+  gap: 2rem;
+
+}
+.testimonial-box{
+  padding: 2rem;
+  width: 26%;
+}
+.testimonial-detail{
+padding: 1.5rem;
+background-color: #ededed;
+border-radius: 10px;
+box-shadow: 2px 2px 5px rgb(210, 210, 210);
+}
+.testimonial-review{
+  margin-top: 2rem;
+ width: 50%;
+ display: flex;
+}
+.review-img{
+  width: 30%;
+}
+.reviewer-name {
+  width: 60%;
+}
+.review-img img{
+width: 80%;
+border-radius: 50%;
+}
+.reviewer-name h3{
+  font-size:14px;
+}
+.reviewer-name p{
+  font-size: 12px;
 }
 
