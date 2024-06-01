@@ -60,3 +60,41 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+.movie-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.movie{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, white, gray, black);
+  color: #fff;
+  padding: 1rem;
+}
+.movie-img{
+  width: 50%;
+}
+.movie-detail{
+  width: 45%;
+  padding: .5rem;
+ 
+}
+.movie-img img{
+  width: 100%;
+}
+.movie-detail h3,h4,p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.movie-detail h2{
+ font-size: 17px;
+}
+.movie-detail p{
+  font-size: 13px;
+}

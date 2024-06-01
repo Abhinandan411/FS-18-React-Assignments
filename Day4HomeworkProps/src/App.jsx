@@ -1,5 +1,7 @@
 import Color from './components/Color'
 import data from './data/color'
+import moviedata from './data/movies'
+import Movie from './components/Movie'
 import './App.css'
 
 function App() {
@@ -21,7 +23,32 @@ function App() {
         </div>
       </div>
 
-      
+      <div className='move-props'>
+        <div className='project-titel'>
+          <h1>React-Props-002</h1>
+          <p>🔖A basic application that displays a list of movies as a list of cards. Each card provides movie detail such as title, subtitle, description, image, and rating.</p>
+
+        </div>
+
+        <div className='movie-container'>
+          {moviedata.map((movie, index) => (
+            <Movie
+              key={index}
+              movie={movie.movie}
+              titel={movie.titel}
+              description={movie.discription}
+              url={movie.url}
+              ratings={movie.ratings}
+            />
+          ))}
+        </div>
+
+
+
+
+      </div>
+
+
 
 
     </>
