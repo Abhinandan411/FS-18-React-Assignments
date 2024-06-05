@@ -11,7 +11,7 @@ function App() {
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    console.log(paracount)
+    // console.log(paracount)
 
     const newParargraph = data.slice(0,paracount);
 
@@ -36,6 +36,7 @@ function App() {
             <input type="submit" value="GENERATE" className='generateButton' />
           </form>
         </div>
+
         <div className='results'>
            {
              allparagraph.map( (item , index)=>{
