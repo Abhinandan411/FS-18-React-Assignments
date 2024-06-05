@@ -42,9 +42,10 @@
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(53, 52, 52);
     align-items: center;
     text-align: center;
+    color: #fff;
 }
 .subjectsDiv{
     padding: 1rem;
@@ -65,4 +66,5 @@
 }
 .button:hover{
     background-color: rgb(4, 97, 184);
+    box-shadow: 2px 2px 22px 3px rgb(255, 255, 255);
 }

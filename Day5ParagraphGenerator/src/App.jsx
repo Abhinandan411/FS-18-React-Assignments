@@ -40,7 +40,7 @@ function App() {
         <div className='results'>
            {
              allparagraph.map( (item , index)=>{
-               return <p key={index}>{item.id}). {item.paragraph}</p>
+               return <p >{item.id}). {item.paragraph}</p>
              })
            }
         </div>
