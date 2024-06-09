@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Grocery() {
 
@@ -13,7 +15,7 @@ function Grocery() {
         e.preventDefault();
 
         if (inputValue.trim() === "") {
-            alert("🙄 Please enter an item");
+            toast.error("Please fill in the input field", { autoClose: 2000 });
             return;
         }
 
@@ -21,10 +23,11 @@ function Grocery() {
         obj.task = inputValue;
         obj.id = Date.now();
 
-        
+
 
         setTasks([...tasks, obj]);
-        setInputValue("")
+        setInputValue("");
+        toast.success("Item added to the list", { autoClose: 2000 });
     }
 
     function handleDelete(idToDelete) {
@@ -33,19 +36,32 @@ function Grocery() {
                 return task.id !== idToDelete;
             })
         )
+        toast.info("Item deleted from the list", { autoClose: 2000 });
     }
 
     function handleCompleted(idToComplete) {
         console.log(idToComplete);
         if (completedTask.includes(idToComplete)) {
             setCompletedTask(completedTask.filter(id => id !== idToComplete));
+            toast.info("Item marked as incomplete", { autoClose: 2000 });
         } else {
             setCompletedTask([...completedTask, idToComplete]);
+            toast.success("Item marked as complete", { autoClose: 2000 });
         }
 
     }
 
+    useEffect( ()=>{
+       if(tasks.length > 0){
+        localStorage.setItem("tasks" , JSON.stringify(tasks));
+       }
+    } , [tasks])
 
+    useEffect(()=>{
+        let data = JSON.parse(localStorage.getItem("tasks"));
+        if(data)
+            setTasks(data);
+    },[])
 
     return (
         <>
@@ -71,6 +87,7 @@ function Grocery() {
                                     </div>
 
                                     <button onClick={() => handleDelete(item.id)}>Delete</button>
+
                                 </li>
                             })
                         }
@@ -78,6 +95,7 @@ function Grocery() {
                 </div>
 
             </div>
+            <ToastContainer position="top-center" />
 
         </>
     )
