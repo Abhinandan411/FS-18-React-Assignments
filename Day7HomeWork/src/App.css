@@ -41,6 +41,11 @@ nav button{
   border: transparent;
 
 }
+.searchbar{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
 .allrestaurent{
   padding: 2rem;
   display: flex;
@@ -76,7 +81,7 @@ nav button{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 1rem;
-  background-color: rgb(221, 252, 110);
+  background-color: rgb(53, 212, 191);
 
 }
 .ratings p{
