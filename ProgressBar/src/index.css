@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+    .translate-x-custom {
+      @apply transform;
+      transform: translateX(calc(10% - 100%));
+    }
+  } */
