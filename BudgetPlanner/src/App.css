@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+#container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#exLen {
+  color: #888;
+}
+
+.budget-container {
+  margin-bottom: 20px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-name {
+  flex: 1;
+  text-align: left;
+}
+
+.expense-amount {
+  color: #d9534f;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-expense-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.add-expense-form input {
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-expense-form button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
