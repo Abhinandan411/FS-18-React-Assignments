@@ -14,9 +14,9 @@ function Products() {
               {product.name} - ${product.price}
             </li>
             <div className="quantity-controls">
-              <button onClick={()=> handleIncrement(product.id)}>+</button>
+              <a onClick={()=> handleIncrement(product.id)}>+</a>
               <p>{product.quantity}</p>
-              <button onClick={()=> handleDecrement(product.id)}>-</button>
+              <a onClick={()=> handleDecrement(product.id)}>-</a>
             </div>
           </div>
         ))}

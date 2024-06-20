@@ -5,6 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 
 }
+h1{
+  color: rgb(105, 105, 105);;
+}
 .container{
   display: flex;
   justify-content: space-evenly;
@@ -60,6 +63,18 @@
 .quantity-controls{
   margin-left: 10px;
   padding: .5rem;
-  background-color: #4bc6cfc4;
+  background-color: #2fc3cec4;
   border-radius: 10px;
+}
+.quantity-controls a{
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+.quantity-controls p{
+  color: #fff;
+  font-weight: bold;
 }
